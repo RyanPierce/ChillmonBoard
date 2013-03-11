@@ -2,6 +2,12 @@ Chillmon Board v0.1
 Copyright 2013 Ryan Pierce, rdpierce@pobox.com
 https://github.com/RyanPierce/ChillmonBoard
 
+Component RASPBERRYPI_B / RASBERRYPI_SHIELD modified from microBuilder
+library, available at
+http://www.microbuilder.eu/Projects/EagleFootprintLibrary.aspx
+
+OVERVIEW
+
 This board is a Raspberry Pi shield designed to be used with the Chillmon
 application, available on Github at https://github.com/eastein/chillmon for 
 the purposes of providing temperature control for fermenting beer!
