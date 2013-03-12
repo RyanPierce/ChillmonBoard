@@ -44,12 +44,14 @@ is required for OneWire.
 OUTPUTS
 
 J10, J11, and J12 are digital outputs connected to GPIO pins on the Pi,
-specifically 17, 21, and 22 respectively. Each pin has a 10k pulldown
-resistor, which is critical because the Pi initializes all pins in input
-mode; voltage on them can float high enough to trigger solid state relays,
-which will quickly burn out an air conditioner compressor. Currently, the
-Chillmon software assumes an air conditioner is connected to J10, however
-in the future we would like to add a heater, as we have found that the 
-temperature at Pumping Station: One in the winter often drops below our 
-target ale fermenting temperature. Note that these outputs are current
-limited by the Pi; it can directly drive a solid state relay.
+specifically GPIO17, GPIO21 (for Rev1 Pi) / GPIO27 (for Rev2 Pi), and
+GPIO22 respectively. Rumor has it that the change between Rev1 and Rev2
+is corrected within the Python library. Each pin has a 10k pulldown resistor, 
+which is critical because the Pi initializes all pins in input mode; voltage
+on them can float high enough to trigger solid state relays, which will
+quickly burn out an  air conditioner compressor. Currently, the Chillmon
+software assumes an air conditioner is connected to J10, however in the
+future we would like to add a heater, as we have found that the temperature
+at Pumping Station: One in the winter often drops below our target ale
+fermenting temperature. Note that these outputs are current limited by the
+Pi; it can directly drive a solid state relay.
